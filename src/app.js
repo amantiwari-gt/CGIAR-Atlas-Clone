@@ -1,10 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
+import Body from './components/Body';
 
 const App = () => {
     return(
         <div className='app'>
-            <h1>Hello World!</h1>
+            <Body/>
         </div>
     )
 }

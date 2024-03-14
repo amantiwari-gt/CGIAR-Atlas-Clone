@@ -1,2 +1,21 @@
+.cards-container {
+  flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+}
 
+.atlas-card {
+  width: 220px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.atlas-card:hover {
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+.card-img {
+  width: 100%;
+}
 /*# sourceMappingURL=index.e5980c4e.css.map */
