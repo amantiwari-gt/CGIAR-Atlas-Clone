@@ -1,0 +1,31 @@
+{
+  "name": "adaptationatlas",
+  "version": "1.0.0",
+  "description": "A clone of Climate Adaptation Atlas by CGIAR",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amantiwari-gt/CGIAR-Atlas-Clone.git"
+  },
+  "keywords": [
+    "atlas"
+  ],
+  "author": "Aman Tiwari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amantiwari-gt/CGIAR-Atlas-Clone/issues"
+  },
+  "homepage": "https://github.com/amantiwari-gt/CGIAR-Atlas-Clone#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
