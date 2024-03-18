@@ -6,7 +6,6 @@ const AtlasCard = (props) => {
 
     return (
         <div className="atlas-card">
-
             <img 
                 className="card-img"
                 src="https://agadaptationatlas-files.s3.us-west-2.amazonaws.com/thumbnails/exposure/thumbnail_h2-total-vop_per_cell_km_cog.png"

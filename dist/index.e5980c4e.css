@@ -5,7 +5,8 @@
 }
 
 .atlas-card {
-  width: 220px;
+  background-color: #dcdcdc;
+  width: 500px;
   margin: 5px;
   padding: 5px;
 }
@@ -16,7 +17,13 @@
 }
 
 .card-img {
-  width: 100%;
+  width: 80%;
+  margin: auto;
+  display: block;
+}
+
+.card-text > h3, .card-text > h4 {
+  margin-left: 20px;
 }
 
 .header {

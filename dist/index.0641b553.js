@@ -5888,6 +5888,9 @@ var _s = $RefreshSig$();
 const Body = ()=>{
     _s();
     const [cardsData, setCardsData] = (0, _react.useState)([]);
+    const [filteredCards, setFilteredCards] = (0, _react.useState)([]);
+    const [searchText, setSearchText] = (0, _react.useState)("");
+    const [selectedTopic, setSelectedTopic] = (0, _react.useState)("");
     (0, _react.useEffect)(()=>{
         fetchData();
     }, []);
@@ -5896,26 +5899,89 @@ const Body = ()=>{
         const jsonData = await response.json();
         // console.log(jsonData);
         setCardsData(jsonData?.results);
+        setFilteredCards(jsonData?.results);
     // console.log(cardsData);
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "cards-container",
-        children: cardsData.map((card)=>{
-            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _atlasCardDefault.default), {
-                singleCardData: card
-            }, card.id, false, {
+        className: "body",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "Browse Data Layers"
+            }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 25,
-                columnNumber: 17
-            }, undefined);
-        })
-    }, void 0, false, {
+                lineNumber: 30,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: "You can find the layers and data underlying the Atlas here. Many layers can be downloaded today, with more available in future releases. Use the filters to search by keyword or topic."
+            }, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 31,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "filter",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "search",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            className: "search-input",
+                            type: "text",
+                            placeholder: "Search for layer",
+                            value: searchText,
+                            onChange: (e)=>setSearchText(e.target.value)
+                        }, void 0, false, {
+                            fileName: "src/components/Body.js",
+                            lineNumber: 34,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: "search-btn",
+                            onClick: (e)=>{
+                                const filteredData = cardsData.filter((card)=>card.topic.toLowerCase().includes(searchText.toLowerCase()));
+                                setFilteredCards(filteredData);
+                            },
+                            children: "Search"
+                        }, void 0, false, {
+                            fileName: "src/components/Body.js",
+                            lineNumber: 44,
+                            columnNumber: 21
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Body.js",
+                    lineNumber: 33,
+                    columnNumber: 17
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 32,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "cards-container",
+                children: filteredCards.map((card)=>{
+                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _atlasCardDefault.default), {
+                        singleCardData: card
+                    }, card.id, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 60,
+                        columnNumber: 17
+                    }, undefined);
+                })
+            }, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 57,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "src/components/Body.js",
-        lineNumber: 22,
+        lineNumber: 29,
         columnNumber: 9
     }, undefined);
 };
-_s(Body, "YbUCcYSDxyubqvnYoLd1fKfcp/4=");
+_s(Body, "7zvxYRRU/Q4fw579e1I+NHOe+BI=");
 _c = Body;
 exports.default = Body;
 var _c;
@@ -5956,7 +6022,7 @@ const AtlasCard = (props)=>{
                 alt: "thumbnail"
             }, void 0, false, {
                 fileName: "src/components/AtlasCard.js",
-                lineNumber: 10,
+                lineNumber: 9,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -5966,27 +6032,27 @@ const AtlasCard = (props)=>{
                         children: title
                     }, void 0, false, {
                         fileName: "src/components/AtlasCard.js",
-                        lineNumber: 17,
+                        lineNumber: 16,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                         children: topic
                     }, void 0, false, {
                         fileName: "src/components/AtlasCard.js",
-                        lineNumber: 18,
+                        lineNumber: 17,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                         children: subTopic
                     }, void 0, false, {
                         fileName: "src/components/AtlasCard.js",
-                        lineNumber: 19,
+                        lineNumber: 18,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/AtlasCard.js",
-                lineNumber: 16,
+                lineNumber: 15,
                 columnNumber: 13
             }, undefined)
         ]

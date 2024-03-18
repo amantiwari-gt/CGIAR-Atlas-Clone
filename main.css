@@ -5,9 +5,12 @@
 }
 
 .atlas-card {
-    width: 220px;
+    width: 500px;
     padding: 5px;
     margin: 5px;
+    background-color: gainsboro;
+    /* display: flex; */
+    
 }
 
 .atlas-card:hover {
@@ -16,7 +19,18 @@
 }
 
 .card-img {
-    width: 100%;
+    width: 80%;
+    margin: auto;
+    display: block;
+    
+}
+
+.card-text >h3{
+    margin-left: 20px;
+}
+
+.card-text >h4{
+    margin-left: 20px;
 }
 
 .header {
