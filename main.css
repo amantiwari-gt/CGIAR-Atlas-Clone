@@ -2,6 +2,7 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .atlas-card {
@@ -54,4 +55,10 @@
 .logo-container {
     padding-left: 5px;
     margin-left: 40px;
+}
+
+.filter {
+    /* justify-content: center; */
+    /* margin-left: 300px; */
+    margin: 20px;
 }

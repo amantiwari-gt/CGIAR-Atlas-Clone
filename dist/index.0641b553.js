@@ -5890,7 +5890,6 @@ const Body = ()=>{
     const [cardsData, setCardsData] = (0, _react.useState)([]);
     const [filteredCards, setFilteredCards] = (0, _react.useState)([]);
     const [searchText, setSearchText] = (0, _react.useState)("");
-    const [selectedTopic, setSelectedTopic] = (0, _react.useState)("");
     (0, _react.useEffect)(()=>{
         fetchData();
     }, []);
@@ -5905,18 +5904,27 @@ const Body = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "body",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: "Browse Data Layers"
-            }, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                className: "body-text",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        children: "Browse Data Layers"
+                    }, void 0, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 30,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: "You can find the layers and data underlying the Atlas here. Many layers can be downloaded today, with more available in future releases. Use the filters to search by keyword or topic."
+                    }, void 0, false, {
+                        fileName: "src/components/Body.js",
+                        lineNumber: 31,
+                        columnNumber: 17
+                    }, undefined)
+                ]
+            }, void 0, true, {
                 fileName: "src/components/Body.js",
-                lineNumber: 30,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: "You can find the layers and data underlying the Atlas here. Many layers can be downloaded today, with more available in future releases. Use the filters to search by keyword or topic."
-            }, void 0, false, {
-                fileName: "src/components/Body.js",
-                lineNumber: 31,
+                lineNumber: 29,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -5932,7 +5940,7 @@ const Body = ()=>{
                             onChange: (e)=>setSearchText(e.target.value)
                         }, void 0, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 34,
+                            lineNumber: 35,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -5944,18 +5952,18 @@ const Body = ()=>{
                             children: "Search"
                         }, void 0, false, {
                             fileName: "src/components/Body.js",
-                            lineNumber: 44,
+                            lineNumber: 45,
                             columnNumber: 21
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Body.js",
-                    lineNumber: 33,
+                    lineNumber: 34,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 32,
+                lineNumber: 33,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -5965,23 +5973,23 @@ const Body = ()=>{
                         singleCardData: card
                     }, card.id, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 60,
+                        lineNumber: 61,
                         columnNumber: 17
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 57,
+                lineNumber: 58,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Body.js",
-        lineNumber: 29,
+        lineNumber: 28,
         columnNumber: 9
     }, undefined);
 };
-_s(Body, "7zvxYRRU/Q4fw579e1I+NHOe+BI=");
+_s(Body, "YFbz/fEnVkoJHct/Kzj2agzCi3k=");
 _c = Body;
 exports.default = Body;
 var _c;

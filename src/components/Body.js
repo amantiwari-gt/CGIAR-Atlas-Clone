@@ -10,7 +10,6 @@ const Body = () => {
 
     const [searchText, setSearchText] = useState("");
 
-    const [selectedTopic, setSelectedTopic] = useState("");
 
     useEffect(() => {
         fetchData();
@@ -27,8 +26,10 @@ const Body = () => {
 
     return (
         <div className='body'>
-            <h1>Browse Data Layers</h1>
-            <p>You can find the layers and data underlying the Atlas here. Many layers can be downloaded today, with more available in future releases. Use the filters to search by keyword or topic.</p>
+            <span className='body-text'>
+                <h1>Browse Data Layers</h1>
+                <p>You can find the layers and data underlying the Atlas here. Many layers can be downloaded today, with more available in future releases. Use the filters to search by keyword or topic.</p>
+            </span>
             <div className='filter'>
                 <div className='search'>
                     <input 
