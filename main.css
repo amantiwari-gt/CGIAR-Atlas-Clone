@@ -18,3 +18,26 @@
 .card-img {
     width: 100%;
 }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-items > ul{
+    display: flex;
+    list-style: none;
+    font-size: 18px;
+    margin-right: 40px;
+}
+
+.nav-items > ul > li{
+    /* padding: 10px; */
+    margin: 5px;
+}
+
+.logo-container {
+    padding-left: 5px;
+    margin-left: 40px;
+}

@@ -23,9 +23,9 @@ const Body = () => {
             {cardsData.map((card) => {
                 return (
                 <AtlasCard key={card.id} singleCardData={card}/>
-            )})};
+            )})}
         </div>
-    );
+    )
 }
 
 export default Body;
