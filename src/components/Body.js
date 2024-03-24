@@ -1,6 +1,7 @@
 import {useState, useEffect} from'react';
 import { CARDS_API } from '../utils/Links';
 import AtlasCard from './AtlasCard';
+import Shimmer from './Shimmer';
 
 const Body = () => {
 
@@ -24,7 +25,11 @@ const Body = () => {
         // console.log(cardsData);
     };
 
-    return (
+    // if(cardsData.length === 0) {
+    //     return <Shimmer/>;
+    // };
+
+    return cardsData.length === 0 ? <Shimmer/> : (
         <div className='body'>
             <span className='body-text'>
                 <h1>Browse Data Layers</h1>
@@ -63,7 +68,7 @@ const Body = () => {
             </div>
         </div>
         
-    )
+    );
 }
 
 export default Body;

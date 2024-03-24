@@ -11,7 +11,6 @@
     margin: 5px;
     background-color: gainsboro;
     /* display: flex; */
-    
 }
 
 .atlas-card:hover {
@@ -61,4 +60,50 @@
     /* justify-content: center; */
     /* margin-left: 300px; */
     margin: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.footer-icon {
+    width: 100px;
+    height: 100px;
+    margin-left: 200px;
+}
+
+.footer-links{
+    display: flex;
+    list-style: none;
+    font-size: 18px;
+    margin-right: 40px;
+}
+
+.footer-links > li{
+    margin-right: 100px;
+}
+
+.shimmer-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.shimmer-card {
+    width: 500px;
+    height: 500px;
+    padding: 5px;
+    margin: 5px;
+    background-color: gainsboro;
+}
+
+.shimmer-img{
+    width: 80%;
+    margin: auto;
+    display: block;
 }
